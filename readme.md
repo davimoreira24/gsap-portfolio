@@ -1,29 +1,27 @@
-# henryheffernan.com
+# Davi Moreira — Portfolio (3D)
 
-This is one of two repositories created for my portfolio website <a href="https://henryheffernan.com/"><samp>henryheffernan.com</samp></a>. If you are looking for the 2D OS repository you can find it <a href="https://github.com/henryjeff/portfolio-inner-site"><samp>here</samp></a>! Thanks for taking the time to check this out. If you have any questions of comments, feel free to shoot me an email at <samp><a href="mailto:henryheffernan@gmail.com">henryheffernan@gmail.com</a></samp> or you can DM me on twitter <a href="https://twitter.com/henryheffernan"><samp>@henryheffernan</samp></a>.
+Repositório do site **3D** (Three.js + webpack). O “OS” 2D dentro do monitor vive no repositório separado: [**inner-repo**](https://github.com/davimoreira24/inner-repo).
 
-<br>
-
-To setup a dev environment:
+## Dev
 
 ```bash
-# Clone the repository
-
-# Install dependencies 
-npm i
-
-# Run the local dev server
-npm run dev
+nvm use 22
+pnpm install
+pnpm dev
 ```
 
-To serve a production build:
+## Inner (CRA) em paralelo
 
 ```bash
-# Install dependencies if not already done - 'npi i'
+pnpm inner:install   # primeira vez
+pnpm inner:dev       # http://localhost:3020
+```
 
-# Build for production
-npm run build
+Em produção o iframe aponta para o deploy do inner (ex.: Vercel). Ver `src/Application/World/MonitorScreen.ts`.
 
-# Serve the build using express
-npm start
+## Build / produção
+
+```bash
+pnpm build
+pnpm start
 ```

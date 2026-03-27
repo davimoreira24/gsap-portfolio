@@ -1,5 +1,6 @@
 {
-    "repository": "#",
+    "name": "davi-moreira-portfolio-3d",
+    "repository": "https://github.com/davimoreira24/gsap-portfolio",
     "license": "UNLICENSED",
     "scripts": {
         "start": "node server/index.ts",
