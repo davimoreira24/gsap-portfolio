@@ -15,8 +15,8 @@ const IFRAME_SIZE = {
     h: SCREEN_SIZE.h - IFRAME_PADDING,
 };
 
-/** OS embutido no monitor — repo `portfolio-inner-site` (CRA, porta em portfolio-inner-site/.env). Rode `pnpm inner:dev` na raiz. */
-const IFRAME_OS_URL = 'http://localhost:3020/';
+/** OS 2D no monitor — deploy em produção (inner). Para dev local do inner: `pnpm inner:dev` e troca temporária para `http://localhost:3020/`. */
+const IFRAME_OS_URL = 'https://inner-repo.vercel.app/';
 
 export default class MonitorScreen extends EventEmitter {
     application: Application;
