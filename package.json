@@ -4,7 +4,9 @@
     "scripts": {
         "start": "node server/index.ts",
         "build": "webpack --config ./bundler/webpack.prod.js",
-        "dev": "webpack serve --config ./bundler/webpack.dev.js"
+        "dev": "webpack serve --config ./bundler/webpack.dev.js",
+        "inner:dev": "pnpm -C portfolio-inner-site start",
+        "inner:install": "pnpm -C portfolio-inner-site install"
     },
     "dependencies": {
         "@babel/core": "^7.16.12",

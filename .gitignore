@@ -4,3 +4,6 @@ package-lock.json
 *.psd
 
 public/
+
+# Deployed as its own repo: https://github.com/davimoreira24/inner-repo
+portfolio-inner-site/

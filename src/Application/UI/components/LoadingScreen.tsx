@@ -49,8 +49,8 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
             setLoaded(data.loaded);
             resources.push(
                 `Loaded ${data.sourceName}${getSpace(
-                    data.sourceName
-                )} ... ${Math.round(data.progress * 100)}%`
+                    data.sourceName,
+                )} ... ${Math.round(data.progress * 100)}%`,
             );
             if (resources.length > 8) {
                 resources.shift();
@@ -149,24 +149,24 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                         <div style={styles.logoContainer}>
                             <div>
                                 <p style={styles.green}>
-                                    <b>Heffernan,</b>{' '}
+                                    <b>Davi Moreira,</b>{' '}
                                 </p>
                                 <p style={styles.green}>
-                                    <b>Henry Inc.</b>
+                                    <b>Sharkmind</b>
                                 </p>
                             </div>
                         </div>
                         <div style={styles.headerInfo}>
-                            <p>Released: 01/13/2000</p>
-                            <p>HHBIOS (C)2000 Heffernan Henry Inc.,</p>
+                            <p>Released: March 20, 2026</p>
+                            <p>SHARKBIOS (C)2026 Sharkmind, Davi Moreira,</p>
                         </div>
                     </div>
                     <div style={styles.body} className="loading-screen-body">
-                        <p>HSP S13 2000-2022 Special UC131S</p>
+                        <p>Sharkmind S13 2026 Special UC131S</p>
                         <div style={styles.spacer} />
                         {showBiosInfo && (
                             <>
-                                <p>HSP Showcase(tm) XX 113</p>
+                                <p>Sharkmind Showcase(tm) XX 113</p>
                                 <p>Checking RAM : {14000} OK</p>
                                 <div style={styles.spacer} />
                                 <div style={styles.spacer} />
@@ -195,7 +195,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                             <p>
                                 All Content Loaded, launching{' '}
                                 <b style={styles.green}>
-                                    'Henry Heffernan Portfolio Showcase'
+                                    'Davi Moreira Portfolio Showcase (Sharkmind)'
                                 </b>{' '}
                                 V1.0
                             </p>
@@ -227,7 +227,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                     <p>But do enjoy what I have done so far :)</p>
                     <div style={styles.spacer} />
                     <div style={styles.spacer} /> */}
-                    <p>Henry Heffernan Portfolio Showcase 2022</p>
+                    <p>Davi Moreira Portfolio</p>
                     {mobileWarning && (
                         <>
                             <br />
@@ -243,7 +243,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                         </>
                     )}
                     <div style={{ display: 'flex', alignItems: 'flex-end' }}>
-                        <p>Click start to begin{'\xa0'}</p>
+                        <p>Press Start to begin{'\xa0'}</p>
                         <span className="blinking-cursor" />
                     </div>
                     <div
